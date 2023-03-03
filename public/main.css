@@ -42,7 +42,7 @@ body {
 } 
 
 .vnav  {
-  top:30px;
+  top: 1px;
   display: block;
   position: absolute;
   float: right;
@@ -105,7 +105,7 @@ nav.shift ul li a:hover:after {
 }
 
 /* Keyframes */
-@-webkit-keyframes fill {
+@keyframes fill {
   0% {
     width: 0%;
     height: 1px;
@@ -122,7 +122,7 @@ nav.shift ul li a:hover:after {
 }
 
 /* Keyframes */
-@-webkit-keyframes circle {
+@keyframes circle {
   0% {
     width: 1px;
     top: 0;
@@ -465,7 +465,7 @@ nav.shift ul li a:hover:after {
 }
 #stats,
 .count-particles {
-  -webkit-user-select: none;
+  user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
