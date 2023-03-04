@@ -35,10 +35,10 @@ const Navbar = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0 ">
               <li className="text-white hover:text-indigo-200">
-                <Link to="#">HOME</Link>
+                <Link to="/">HOME</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <a to="#">ABOUT US</a>
+                <Link to="/login">ABOUT US</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
                 <a to="#">EVENT</a>
