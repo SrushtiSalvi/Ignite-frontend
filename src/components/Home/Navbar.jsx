@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className={`w-full md:bg-transparent bg-primary fixed`}>
+    <nav className={`w-full bg-transparent fixed z-10`}>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -27,31 +27,31 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-8 text-lg ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0 ">
-              <li className="text-white hover:text-indigo-200">
-                <Link to="/">HOME</Link>
-              </li>
-              <li className="text-white hover:text-indigo-200">
-                <Link to="/login">ABOUT US</Link>
-              </li>
-              <li className="text-white hover:text-indigo-200">
-                <a to="#">EVENT</a>
-              </li>
-              <li className="text-white hover:text-indigo-200">
-                <a to="#">SPONSORS</a>
-              </li>
-              <li className="text-white hover:text-indigo-200">
-                <a to="#">GALLERY</a>
-              </li>
-            </ul>
+        {/* <div> */}
+        <div
+          className={`flex-1 justify-self-center  md:block md:pb-0 md:mt-8 text-lg  ${
+            navbar ? "block bg-black" : "hidden bg-transparent"
+          }`}
+        >
+          <ul className="items-center justify-center space-y-4 md:flex md:space-x-8 md:space-y-0 text-base">
+            <li className="text-white hover:text-indigo-200">
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="text-white hover:text-indigo-200">
+              <Link to="/login">ABOUT US</Link>
+            </li>
+            <li className="text-white hover:text-indigo-200">
+              <a to="#">EVENT</a>
+            </li>
+            <li className="text-white hover:text-indigo-200">
+              <a to="#">SPONSORS</a>
+            </li>
+            <li className="text-white hover:text-indigo-200">
+              <a to="#">GALLERY</a>
+            </li>
+          </ul>
 
-            {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+          {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block">
               <a
                 href="javascript:void(0)"
                 className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
@@ -65,8 +65,8 @@ const Navbar = () => {
                 Sign up
               </a>
             </div> */}
-          </div>
         </div>
+        {/* </div> */}
         {/* <div className="hidden space-x-2 md:inline-block">
           <a
             href="javascript:void(0)"
